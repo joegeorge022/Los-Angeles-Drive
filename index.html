@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Los Angeles Drive GTA-5</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="overflow-hidden relative bg-black">
+    <div
+      class="video-background opacity-0 fixed inset-0 transition-opacity duration-1000 ease-in-out"
+    >
+      <div class="video-foreground">
+        <div id="youtube-player" style="width: 640px; height: 360px">
+          <div style="width: 100%; height: 100%">
+            <iframe
+              frameborder="0"
+              allowfullscreen
+              allow="autoplay; encrypted-media"
+              title="Driving Downtown - Los Angeles"
+              width="130%"
+              height="100%"
+              src="https://www.youtube.com/embed/lTvYjERVAnY?rel=0&autoplay=1&mute=1&controls=0&start=40&loop=1&playlist=lTvYjERVAnY&rel=0&showinfo=0&modestbranding=1&playsinline=1"
+              id="widget2"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <audio id="audio" autoplay loop>
+      <source src="Modjo-Lady.mp3" type="audio/mpeg" />
+    </audio>
+
+    <div
+      class="overlay absolute inset-0 flex justify-center items-center z-10 mt-20"
+    >
+      <a href="index2.html">
+        <h1
+          class="text-2xl font-bold text-white bg-opacity-50 bg-gray-800 p-3 rounded-lg backdrop-blur-md"
+        >
+          Los Santos Gta-5
+        </h1>
+      </a>
+    </div>
+
+    <div
+      class="fixed bottom-4 right-4 flex flex-col items-center space-y-2 bg-gray-800 bg-opacity-75 p-3 rounded-lg shadow-lg"
+    >
+      <div class="flex space-x-2">
+        <button
+          id="playButton"
+          aria-label="Play"
+          class="w-10 h-10 bg-cyan-500 rounded-full text-white flex items-center justify-center shadow-lg hidden"
+        >
+          🔇
+        </button>
+        <button
+          id="pauseButton"
+          aria-label="Pause"
+          class="w-10 h-10 bg-cyan-500 rounded-full text-white flex items-center justify-center shadow-lg"
+        >
+          🔊
+        </button>
+      </div>
+      <div class="flex items-center space-x-2">
+        <span class="text-white text-sm">Volume</span>
+        <input
+          type="range"
+          id="volume"
+          min="0"
+          max="1"
+          step="0.01"
+          value="1"
+          class="appearance-none w-24 h-2 bg-gray-300 rounded-full cursor-pointer"
+        />
+      </div>
+    </div>
+
+    <div
+      class="fixed top-4 right-4 bg-gray-800 bg-opacity-75 p-4 rounded-lg shadow-lg"
+    >
+      <div class="flex flex-col items-end space-y-1">
+        <div class="flex items-center space-x-1">
+          <span
+            class="text-white text-lg font-semibold"
+            id="currentDate"
+          ></span>
+        </div>
+        <div class="flex items-center space-x-1">
+          <span class="text-white text-sm" id="currentTime">0:00</span>
+        </div>
+        <div class="flex items-center space-x-1">
+          <span class="text-white text-sm" id="weather">🌆 75°F </span>
+          <span class="text-white text-sm font-semibold" id="location"
+            >Los Angeles</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.onload = function () {
+        document
+          .querySelector(".video-background")
+          .classList.add("opacity-100");
+      };
+
+      const player = document.getElementById("youtube-player");
+      const audio = document.getElementById("audio");
+      const playButton = document.getElementById("playButton");
+      const pauseButton = document.getElementById("pauseButton");
+      const volumeSlider = document.getElementById("volume");
+
+      playButton.addEventListener("click", () => {
+        audio.play();
+        playButton.classList.add("hidden");
+        pauseButton.classList.remove("hidden");
+      });
+
+      pauseButton.addEventListener("click", () => {
+        audio.pause();
+        pauseButton.classList.add("hidden");
+        playButton.classList.remove("hidden");
+      });
+
+      volumeSlider.addEventListener("input", (e) => {
+        audio.volume = e.target.value;
+      });
+
+      function updateDateTime() {
+        const now = new Date();
+        const options = {
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+          timeZone: "America/Los_Angeles",
+        };
+
+        document.getElementById("currentDate").textContent =
+          now.toLocaleDateString("en-US", options);
+
+        const timeOptions = {
+          hour: "2-digit",
+          minute: "2-digit",
+          timeZone: "America/Los_Angeles",
+        };
+        document.getElementById("currentTime").textContent =
+          now.toLocaleTimeString("en-US", timeOptions);
+      }
+      updateDateTime();
+      setInterval(updateDateTime, 10000);
+    </script>
+  </body>
+</html>
