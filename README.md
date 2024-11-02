@@ -1,22 +1,20 @@
 <img width="1280" alt="readme-banner" src="https://github.com/user-attachments/assets/35332e92-44cb-425b-9dff-27bcf1023c6c">
 
-# [Project Name] 🎯
+# Los Angeles Drive 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: Los Santos Legends
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Joe George - St. Joseph's College of Engineering and Technology, Palai
 
 ### Project Description
 [2-3 lines about what your project does]
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+In a world filled with mundane commutes and boring playlists, countless individuals are suffering from an acute lack of excitement during their daily drives. Drivers are increasingly faced with the tragic reality of not having a video game-inspired experience to brighten their journeys!
 
 ### The Solution (that nobody asked for)
 [How are you solving it? Keep it fun!]
@@ -28,14 +26,17 @@ For Software:
 - [Frameworks used]
 - [Libraries used]
 - [Tools used]
+- HTML5
+- CSS3
+- Tailwind Framework
+- Javascript
+- VS Code
 
 For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+- Macbook Air
 
 ### Implementation
-For Software:
+For Software: 
 # Installation
 [commands]
 
