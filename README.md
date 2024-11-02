@@ -16,6 +16,7 @@
 ## **Note:** 
 - #### 🔴Enable "Audio" and Autoplay" on the website for good experience
 - #### There is an additional webpage to the project. I meant for the 2nd webpage to be an easter egg but I don't want it to go unnoticed. Click on the "Los Santos Gta-5" text on the first webpage to go to a night-themed Webpage.
+- #### AI tools have been utilized in the development of this project to enhance functionality and user interaction
   
 ---
 
