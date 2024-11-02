@@ -13,6 +13,10 @@
 - **Team Lead:** Joe George  
   *St. Joseph's College of Engineering and Technology, Palai*
 
+## **Note:** 
+- #### 🔴Enable "Audio" and Autoplay" on the website for good experience
+- #### There is an additional webpage to the project. I meant for the 2nd webpage to be an easter egg but I don't want it to go unnoticed. Click on the "Los Santos Gta-5" text on the first webpage to go to a night-themed Webpage.
+  
 ---
 
 ### **Project Description**
@@ -52,10 +56,7 @@ This project delivers a captivating virtual ride through Los Angeles, blending s
 
 ### **Implementation**
 For Software: 
-The Project is deployed as a website which can be viewed by clicking [here](https://joegeorge022.github.io/Los-Angeles-Drive/).
-
-#### **Note:** 
-There is an additional webpage to the project. I meant for the 2nd webpage to be an easter egg but I don't want it to go unnoticed. Click on the "Los Santos Gta-5" text on the first webpage to go to a night-themed Webpage.
+The Project is deployed as a website which can be viewed by clicking [here](https://joegeorge022.github.io/Los-Angeles-Drive/) or [here](https://los-angeles-drive.pages.dev/).
 
 ---
 
