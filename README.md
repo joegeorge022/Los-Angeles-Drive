@@ -37,11 +37,17 @@ This project delivers a captivating virtual ride through Los Angeles, blending s
 **For Software:**
 - HTML5
 - CSS3
-- Tailwind Framework
-- YouTube API
 - Javascript
+- Tailwind Framework
+- Cloudflare
+- Github Pages
+- YouTube API
 - VS Code
 
+**Deployments:**
+- [Cloudflare](https://los-angeles-drive.pages.dev)
+- [Github Pages](https://joegeorge022.github.io/Los-Angeles-Drive/)
+  
 ---
 
 ### **Implementation**
