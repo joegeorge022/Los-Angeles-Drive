@@ -7,7 +7,7 @@
 ## Basic Details
 
 ### **Team Name:** 
-**Los Santos Legends**
+**Los Angeles Drive**
 
 ### **Team Members**
 - **Team Lead:** Joe George  
