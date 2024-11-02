@@ -22,10 +22,6 @@ In a world filled with mundane commutes and boring playlists, countless individu
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
 - HTML5
 - CSS3
 - Tailwind Framework
